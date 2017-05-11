@@ -13,13 +13,13 @@ public class Users implements Serializable {
 	@Id
 	private String username;
 	private String password;
-	private boolean enabled;
+	private int enabled;
 
 	public Users() {
 		super();
 	}
 
-	public Users(String username, String password, boolean enabled) {
+	public Users(String username, String password, int enabled) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -42,11 +42,11 @@ public class Users implements Serializable {
 		this.password = password;
 	}
 
-	public boolean isEnabled() {
+	public int isEnabled() {
 		return enabled;
 	}
 
-	public void setEnabled(boolean enabled) {
+	public void setEnabled(int enabled) {
 		this.enabled = enabled;
 	}
 
